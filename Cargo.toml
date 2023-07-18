@@ -1,0 +1,21 @@
+[package]
+name = "sat_lab"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+description = "A crate providing the framework for using SAT problems"
+homepage = "https://github.com/arenaudineau/sat_lab/"
+repository = "https://github.com/arenaudineau/sat_lab"
+readme = "README.md"
+keywords = [
+    "sat",
+    "loader",
+]
+
+[dependencies]
+bool_vec = "0.2"
+rand = { version = "0.8.5", optional = true }
+
+[features]
+rand = ["dep:rand"]
