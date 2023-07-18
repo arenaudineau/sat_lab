@@ -1,6 +1,6 @@
 # sat_lab: A crate providing the framework for manipulating SAT problems.
 
-[![crates.io](https://img.shields.io/crates/v/sa_labt?style=for-the-badge)](https://crates.io/crates/sat_lab)
+[![crates.io](https://img.shields.io/crates/v/sat_lab?style=for-the-badge)](https://crates.io/crates/sat_lab)
 
 🔧 I should write a nice presentation
 
