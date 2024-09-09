@@ -106,7 +106,7 @@ impl Instance {
                 }
                 chosen_indices.clear();
 
-                Clause::from_elements(var_indices, &negates)
+                Clause::from_indices(var_indices, &negates)
             })
             .collect();
 
