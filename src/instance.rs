@@ -14,6 +14,20 @@ pub struct Instance {
     clauses: Vec<Clause>,
 }
 
+impl Clone for Instance {
+    fn clone(&self) -> Self {
+        let mut bvec_clone = BoolVec::with_capacity(self.vars.capacity());
+        for origin in &self.vars {
+            bvec_clone.push(origin);
+        }
+
+        Self {
+            vars: bvec_clone,
+            clauses: self.clauses.clone(),
+        }
+    }
+}
+
 impl Instance {
     /// Creates a new instance with the given variables and clauses.
     pub fn new(vars: BoolVec, clauses: Vec<Clause>) -> Self {
